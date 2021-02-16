@@ -2568,6 +2568,7 @@ dependencies = [
  "solana-program-test",
  "solana-sdk",
  "tokio 0.3.7",
+ "wasm-bindgen",
 ]
 
 [[package]]
