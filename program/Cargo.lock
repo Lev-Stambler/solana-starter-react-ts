@@ -2564,9 +2564,14 @@ checksum = "6e63cff320ae2c57904679ba7cb63280a3dc4613885beafb148ee7bf9aa9042d"
 name = "spl-memo"
 version = "3.0.0"
 dependencies = [
+ "num-derive",
+ "num-traits",
+ "serde",
+ "serde_json",
  "solana-program",
  "solana-program-test",
  "solana-sdk",
+ "thiserror",
  "tokio 0.3.7",
  "wasm-bindgen",
 ]

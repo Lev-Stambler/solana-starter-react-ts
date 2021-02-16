@@ -2,9 +2,11 @@
 
 use solana_program::{program_error::ProgramError, program_option::COption, pubkey::Pubkey};
 
+pub  const pub_key_size: usize = 32;
+
 pub fn unpack_pubkey(input: &[u8]) -> Result<(Pubkey, &[u8]), ProgramError> {
-    if input.len() >= 32 {
-        let (key, rest) = input.split_at(32);
+    if input.len() >= pub_key_size {
+        let (key, rest) = input.split_at(pub_key_size);
         let pk = Pubkey::new(key);
         Ok((pk, rest))
     } else {
