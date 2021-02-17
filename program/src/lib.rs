@@ -4,8 +4,6 @@
 //! A program that accepts a string of encoded characters and verifies that it parses,
 //! while verifying and logging signers. Currently handles UTF-8 characters.
 
-pub mod client;
-mod client_error;
 mod entrypoint;
 pub mod error;
 mod instruction;
